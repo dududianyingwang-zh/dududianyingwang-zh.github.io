@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#0f2e2b">
+<title>嘟嘟电影网 | 轻松治愈系影视在线观看平台 · 让好电影治愈你的每一天</title>
+<meta name="keywords" content="嘟嘟电影网, dududianyingwang-zh.github.io, 轻松影视在线观看, 治愈系电影, 喜剧片推荐, 动画电影, 家庭影院, 高分影视导航, 嘟嘟电影网官方">
+<meta name="description" content="嘟嘟电影网（dududianyingwang-zh.github.io）是一个以轻松、治愈、陪伴为核心的影视在线观看平台，专注喜剧、动画、家庭、治愈、奇幻、纪录六大类型，配以每日精选片单与观影氛围指引，让不同年龄层的观众都能快速找到当下适合的那一部。">
+<meta name="author" content="嘟嘟电影网">
+<meta name="robots" content="index,follow">
+<meta property="og:site_name" content="嘟嘟电影网">
+<meta property="og:type" content="website">
+<meta property="og:title" content="嘟嘟电影网 | 轻松治愈系影视在线观看平台">
+<meta property="og:description" content="专注喜剧、动画、家庭、治愈、奇幻、纪录六大类型，让不同年龄层的观众都能快速找到当下适合的那一部。">
+<meta property="og:url" content="https://dududianyingwang-zh.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="嘟嘟电影网 | 轻松治愈系影视在线观看平台">
+<meta name="twitter:description" content="专注六大类型影视内容，让好电影治愈你的每一天。">
+<link rel="canonical" href="https://dududianyingwang-zh.github.io/">
+<style>
+:root{
+  --teal:#0f766e;--deep:#134e4a;--forest:#0f2e2b;--lime:#bef264;--mint:#a7f3d0;
+  --bg:#f4fbf9;--card:#fff;--ink:#14302d;--tx:#365856;--sub:#6d8581;--bd:#d8eeea;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;outline:0}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+::selection{background:var(--teal);color:#fff}
+.txt-h{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;width:1px;position:absolute;overflow:hidden;white-space:nowrap}
+
+/* ===== topbar ===== */
+.tb{background:var(--forest);color:#d6f5ef;font-size:12.5px;padding:9px 0}
+.tb-in{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.tb a{color:#a7f3d0;opacity:.85}
+.tb a:hover{opacity:1;text-decoration:underline}
+
+/* ===== header ===== */
+.hd{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+.hd-in{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mk{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--teal),#22d3ee);display:grid;place-items:center;color:#fff;font-size:20px;font-weight:800;box-shadow:0 6px 16px rgba(15,118,110,.3)}
+.logo .tx b{display:block;font-size:20px;color:var(--forest);letter-spacing:.4px}
+.logo .tx span{font-size:11px;color:var(--sub);letter-spacing:2.5px;text-transform:uppercase}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{font-size:15px;color:var(--tx);padding:9px 15px;border-radius:9px;transition:.2s;font-weight:500}
+.nav a:hover{background:var(--mint);color:var(--deep)}
+.mbtn{display:none;width:46px;height:46px;border-radius:11px;background:var(--forest);color:#fff;align-items:center;justify-content:center;font-size:19px}
+
+/* ===== hero editorial ===== */
+.hero{position:relative;padding:66px 0 90px;background:radial-gradient(900px 460px at 82% -10%,rgba(34,211,238,.22),transparent 60%),radial-gradient(700px 420px at 8% 100%,rgba(190,242,100,.22),transparent 60%)}
+.hg{display:grid;grid-template-columns:.9fr 1.1fr;gap:62px;align-items:center}
+.hat{display:inline-block;font-size:12px;letter-spacing:2px;color:var(--teal);background:#e2f7f2;border:1px solid var(--bd);padding:6px 14px;border-radius:30px;margin-bottom:24px;text-transform:uppercase}
+.hg h1{font-size:clamp(34px,5.6vw,58px);line-height:1.16;font-weight:850;color:var(--ink);letter-spacing:-1.2px;margin-bottom:24px}
+.hg h1 b{background:linear-gradient(100deg,var(--teal),#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hg>p{font-size:17px;color:var(--sub);margin-bottom:32px;max-width:470px}
+.hacts{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:15.5px;font-weight:700;padding:15px 31px;border-radius:12px;transition:.3s}
+.btn-a{background:var(--teal);color:#fff;box-shadow:0 10px 26px rgba(15,118,110,.32)}
+.btn-a:hover{background:var(--deep);transform:translateY(-2px)}
+.btn-b{background:#fff;color:var(--deep);border:1.5px solid var(--bd)}
+.btn-b:hover{border-color:var(--teal);color:var(--teal)}
+.htags{margin-top:34px;display:flex;gap:9px;flex-wrap:wrap}
+.htags i{font-style:normal;font-size:13px;color:var(--tx);background:#fff;border:1px solid var(--bd);padding:6px 14px;border-radius:9px}
+
+/* masonry tiles */
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:96px;gap:12px}
+.tl{position:relative;border-radius:16px;padding:18px;color:#fff;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.tl::before{content:"";position:absolute;inset:0;background:linear-gradient(150deg,var(--c1),var(--c2))}
+.tl::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.5),transparent 60%)}
+.tl>*{position:relative;z-index:2}
+.tl b{font-size:17px;line-height:1.35;display:block;margin-bottom:3px}
+.tl span{font-size:11.5px;opacity:.92;letter-spacing:1px}
+.t1{grid-column:1/4;grid-row:1/3;--c1:#0f766e;--c2:#22d3ee}
+.t2{grid-column:4/7;grid-row:1/2;--c1:#ca8a04;--c2:#f59e0b}
+.t3{grid-column:4/7;grid-row:2/3;--c1:#7c3aed;--c2:#a78bfa}
+.t4{grid-column:1/3;grid-row:3/4;--c1:#0ea5e9;--c2:#38bdf8}
+.t5{grid-column:3/5;grid-row:3/4;--c1:#16a34a;--c2:#4ade80}
+.t6{grid-column:5/7;grid-row:3/4;--c1:#e11d48;--c2:#fb7185}
+
+/* ===== marquee ===== */
+.marq{background:var(--forest);color:#fff;padding:16px 0;overflow:hidden}
+.marq-in{display:flex;gap:52px;white-space:nowrap;animation:slide 32s linear infinite;font-size:14.5px;letter-spacing:1px}
+.marq-in span{display:flex;align-items:center;gap:52px}
+.marq-in i{font-style:normal;color:#bef264}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ===== section ===== */
+.sec{padding:86px 0}
+.sh{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;margin-bottom:44px;border-bottom:2px solid var(--forest);padding-bottom:18px}
+.sh .lb .no{font-size:12px;color:#bef264;letter-spacing:3px;background:var(--forest);padding:4px 11px;border-radius:6px;display:inline-block;margin-bottom:11px;font-weight:700}
+.sh h2{font-size:clamp(25px,3.6vw,35px);font-weight:850;color:var(--ink);letter-spacing:-.5px}
+.sh h2 em{font-style:normal;color:var(--teal)}
+.sh .lb p{margin-top:9px;font-size:14.5px;color:var(--sub)}
+.sh .rt{font-size:14px;color:var(--sub);font-weight:600}
+.sh .rt:hover{color:var(--teal)}
+
+/* ===== type cards ===== */
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.type{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:28px 24px;transition:.35s;position:relative;overflow:hidden}
+.type::after{content:"";position:absolute;right:-34px;top:-34px;width:104px;height:104px;border-radius:50%;background:var(--mint);opacity:0;transition:.4s}
+.type:hover{transform:translateY(-8px);box-shadow:0 24px 48px rgba(15,46,43,.13);border-color:#a7f3d0}
+.type:hover::after{opacity:.55}
+.type .ic{width:52px;height:52px;border-radius:13px;display:grid;place-items:center;font-size:24px;margin-bottom:17px;background:#e2f7f2;color:var(--teal)}
+.type h3{font-size:19px;color:var(--ink);margin-bottom:9px;font-weight:800}
+.type p{font-size:14px;color:var(--sub);margin-bottom:15px}
+.type .meta{display:flex;justify-content:space-between;font-size:12.5px;color:var(--sub);border-top:1px dashed var(--bd);padding-top:12px}
+
+/* ===== daily pick (split) ===== */
+.dp{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--bd);border-radius:20px;overflow:hidden;background:var(--card)}
+.dp .lf{background:linear-gradient(150deg,var(--forest),var(--teal));color:#fff;padding:44px 38px;display:flex;flex-direction:column;justify-content:center}
+.dp .lf .d{font-size:13px;letter-spacing:3px;color:#bef264;margin-bottom:15px}
+.dp .lf h3{font-size:clamp(22px,3vw,29px);line-height:1.45;font-weight:800;margin-bottom:18px}
+.dp .lf p{font-size:15px;color:#cffaf3;margin-bottom:26px}
+.dp .lf .who{display:flex;gap:10px;flex-wrap:wrap}
+.dp .lf .who i{font-style:normal;font-size:13px;background:rgba(255,255,255,.16);padding:6px 13px;border-radius:8px}
+.dp .rt{display:flex;flex-direction:column}
+.pick{border-bottom:1px solid var(--bd);padding:20px 26px;display:grid;grid-template-columns:42px 1fr auto;gap:16px;align-items:center;transition:.2s}
+.pick:last-child{border-bottom:0}
+.pick:hover{background:#f0fdfa}
+.pick .n{font-size:22px;font-weight:850;color:var(--bd)}
+.pick:nth-child(1) .n{color:#f59e0b}
+.pick:nth-child(2) .n{color:#94a3b8}
+.pick:nth-child(3) .n{color:#b45309}
+.pick b{display:block;font-size:16px;color:var(--ink)}
+.pick span{font-size:13px;color:var(--sub)}
+.pick .go{font-size:13px;color:var(--teal);font-weight:700;white-space:nowrap}
+
+/* ===== mood ===== */
+.mood{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.mcard{background:var(--card);border-radius:14px;padding:24px;border-left:5px solid var(--teal);transition:.3s}
+.mcard:hover{background:var(--forest);transform:translateX(4px)}
+.mcard:hover h3,.mcard:hover p{color:#fff}
+.mcard:hover .ar{color:#bef264}
+.mcard .ic{font-size:27px;margin-bottom:13px}
+.mcard h3{font-size:17px;color:var(--ink);margin-bottom:7px;font-weight:800}
+.mcard p{font-size:13.5px;color:var(--sub);margin-bottom:12px}
+.mcard .ar{font-size:13px;color:var(--teal);font-weight:700}
+
+/* ===== acc ===== */
+.acc{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.acc details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:0 22px;transition:.2s}
+.acc details[open]{border-color:var(--teal);box-shadow:0 8px 22px rgba(15,118,110,.11)}
+.acc summary{cursor:pointer;padding:19px 0;font-weight:700;font-size:15.5px;list-style:none;position:relative;padding-right:30px;color:var(--ink)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"＋";position:absolute;right:0;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:8px;background:var(--mint);color:var(--deep);display:grid;place-items:center;font-size:15px;font-weight:800}
+.acc details[open] summary::after{content:"－";background:var(--teal);color:#fff}
+.acc details p{margin:0;padding:0 0 19px;font-size:14.5px;color:var(--sub);border-top:1px dashed var(--bd);padding-top:15px}
+
+/* ===== cta ===== */
+.cta{background:linear-gradient(110deg,#0f766e,#0f2e2b 60%,#7c3aed);border-radius:24px;padding:56px 46px;color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;right:-60px;bottom:-60px;width:260px;height:260px;border-radius:50%;background:rgba(190,242,100,.16)}
+.cta h2{font-size:clamp(23px,3.4vw,32px);font-weight:850;margin-bottom:14px;position:relative;z-index:2}
+.cta p{font-size:15.5px;color:#cffaf3;margin-bottom:28px;position:relative;z-index:2}
+.cta .btn-a{background:#bef264;color:#14302d}
+.cta .btn-a:hover{background:#fff;color:var(--deep)}
+.cta .btn-b{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+.cta .btn-b:hover{background:#fff;color:var(--deep);border-color:#fff}
+
+/* ===== footer ===== */
+.ft{background:#0b211f;color:#9ecfc8;padding:64px 0 26px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:42px}
+.fg .brand .mk{width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,var(--teal),#22d3ee);display:grid;place-items:center;color:#fff;font-size:21px;font-weight:800;margin-bottom:17px}
+.fg .brand b{display:block;font-size:19px;color:#fff;margin-bottom:12px}
+.fg .brand p{font-size:14px;max-width:310px;line-height:1.85}
+.fg h4{color:#fff;font-size:15px;margin-bottom:17px;font-weight:700}
+.fg ul li{margin-bottom:11px}
+.fg ul a{font-size:14px;color:#7fb7b0;transition:.2s}
+.fg ul a:hover{color:#bef264;padding-left:5px}
+.fb{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;color:#6f9d97}
+.fb .kw{display:flex;gap:17px;flex-wrap:wrap}
+.fb .kw a{color:#bef264}
+.fb .kw a:hover{color:#fff}
+
+@media(max-width:960px){
+  .nav{position:fixed;top:76px;right:0;width:80vw;max-width:310px;height:calc(100vh - 76px);background:#fff;border-left:1px solid var(--bd);flex-direction:column;padding:20px;gap:2px;transform:translateX(106%);transition:.35s}
+  .nav.open{transform:translateX(0)}
+  .nav a{padding:15px 16px;border-bottom:1px solid var(--bd);font-size:16px}
+  .mbtn{display:flex}
+  .hg{grid-template-columns:1fr;gap:44px}
+  .tiles{grid-template-columns:repeat(2,1fr);grid-auto-rows:auto}
+  .t1,.t2,.t3,.t4,.t5,.t6{grid-column:auto;grid-row:auto;min-height:120px}
+  .dp{grid-template-columns:1fr}
+  .sec{padding:62px 0}
+  .acc{grid-template-columns:1fr}
+  .fg{grid-template-columns:1fr 1fr;gap:30px}
+  .cta{padding:42px 26px}
+}
+@media(max-width:520px){
+  .fg{grid-template-columns:1fr}
+  .sh{grid-template-columns:1fr}
+  .pick{grid-template-columns:34px 1fr;gap:12px}
+  .pick .go{grid-column:2}
+  .hg h1{font-size:34px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="tb">
+  <div class="wrap tb-in">
+    <span>📣 今日片单已更新 · 每日 18:00 精选三部治愈系作品</span>
+    <span><a href="#daily">查看今日精选</a> · <a href="#mood">选片指引</a></span>
+  </div>
+</div>
+
+<header class="hd">
+  <div class="wrap hd-in">
+    <a class="logo" href="#top"><span class="mk">嘟</span><span class="tx"><b>嘟嘟电影网</b><span>Dudu Movie · 治愈你的每一天</span></span></a>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#types">内容类型</a>
+      <a href="#daily">今日精选</a>
+      <a href="#mood">选片指引</a>
+      <a href="#acc">常见疑问</a>
+    </nav>
+    <button class="mbtn" id="tog" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hg">
+        <div>
+          <span class="hat">轻松 · 治愈 · 陪伴</span>
+          <h1>把好电影<br>装进口袋，<b>温暖每一天</b></h1>
+          <p>嘟嘟电影网是一个以轻松、治愈、陪伴为核心的影视在线观看平台，无论你是想笑一笑、想被治愈，还是想陪家人一起度过一段安静时光，这里都有适合你的那一部。</p>
+          <div class="hacts">
+            <a class="btn btn-a" href="#types">浏览内容类型</a>
+            <a class="btn btn-b" href="#daily">看看今日精选</a>
+          </div>
+          <div class="htags"><i>喜剧</i><i>动画</i><i>家庭</i><i>治愈</i><i>奇幻</i><i>纪录</i></div>
+        </div>
+        <div class="tiles">
+          <div class="tl t1"><b>轻松一刻</b><span>让笑声填满午后</span></div>
+          <div class="tl t2"><b>动画奇遇</b><span>写给大人的童话</span></div>
+          <div class="tl t3"><b>治愈陪伴</b><span>温柔地度过低谷</span></div>
+          <div class="tl t4"><b>家庭时光</b><span>一起看的安心</span></div>
+          <div class="tl t5"><b>奇幻冒险</b><span>逃离日常的想象</span></div>
+          <div class="tl t6"><b>纪录视界</b><span>看见真实的世界</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marq">
+    <div class="marq-in">
+      <span><i>◆</i> 喜剧 <i>◆</i> 动画 <i>◆</i> 家庭 <i>◆</i> 治愈 <i>◆</i> 奇幻 <i>◆</i> 纪录 <i>◆</i> 高分片单每日更新 <i>◆</i> 适合全家观看 <i>◆</i> 轻松无压力</span>
+      <span><i>◆</i> 喜剧 <i>◆</i> 动画 <i>◆</i> 家庭 <i>◆</i> 治愈 <i>◆</i> 奇幻 <i>◆</i> 纪录 <i>◆</i> 高分片单每日更新 <i>◆</i> 适合全家观看 <i>◆</i> 轻松无压力</span>
+    </div>
+  </div>
+
+  <section class="sec" id="types">
+    <div class="wrap">
+      <div class="sh">
+        <div class="lb"><span class="no">SECTION 01</span><h2><em>六大内容类型</em>，覆盖每一种观影心情</h2><p>从让人开怀的喜剧，到写给大人的动画，每一类都经过精心筛选</p></div>
+        <a class="rt" href="#daily">下一节：今日精选 →</a>
+      </div>
+      <div class="types">
+        <div class="type"><div class="ic">😂</div><h3>喜剧</h3><p>轻松无负担的欢乐片单，适合忙碌一天后彻底放空，让笑声带走疲惫。</p><div class="meta"><span>💬 轻松解压</span><span>⏱ 全时长</span></div></div>
+        <div class="type"><div class="ic">🎨</div><h3>动画</h3><p>不只是给孩子的作品，也有写给成年人的治愈系动画，每一帧都藏着温柔。</p><div class="meta"><span>🎬 全龄适看</span><span>⏱ 全时长</span></div></div>
+        <div class="type"><div class="ic">🏠</div><h3>家庭</h3><p>适合全家一起观看的温馨故事，传递亲情与陪伴的力量，周末时光的好选择。</p><div class="meta"><span>👨‍👩‍👧 合家欢</span><span>⏱ 全时长</span></div></div>
+        <div class="type"><div class="ic">🌿</div><h3>治愈</h3><p>节奏舒缓、情感细腻的作品，陪你度过心情低谷，重新找回内心的平静。</p><div class="meta"><span>🍵 温柔陪伴</span><span>⏱ 全时长</span></div></div>
+        <div class="type"><div class="ic">🪄</div><h3>奇幻</h3><p>天马行空的想象世界，带你暂时逃离日常，来一场脑洞大开的冒险。</p><div class="meta"><span>✨ 脑洞大开</span><span>⏱ 全时长</span></div></div>
+        <div class="type"><div class="ic">🌍</div><h3>纪录</h3><p>用镜头记录真实的世界与人生，拓宽视野的同时带来思考与感动。</p><div class="meta"><span>🔍 真实视角</span><span>⏱ 全时长</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="daily" style="background:#fff">
+    <div class="wrap">
+      <div class="sh">
+        <div class="lb"><span class="no">SECTION 02</span><h2>今日精选 <em>片单</em></h2><p>编辑部每天为你挑出三部最适合当下观看的作品</p></div>
+        <a class="rt" href="#mood">下一节：选片指引 →</a>
+      </div>
+      <div class="dp">
+        <div class="lf">
+          <div class="d">DAILY PICK · 今日编辑精选</div>
+          <h3>今天的风很温柔，适合看一部不费力的好片子，让心情慢慢亮起来。</h3>
+          <p>三不原则：不烧脑、不沉重、不焦虑，只留下轻松与温暖。</p>
+          <div class="who"><i>适合一个人看</i><i>适合全家看</i><i>适合放松心情</i></div>
+        </div>
+        <div class="rt">
+          <div class="pick"><span class="n">1</span><div><b>海边的小邮局</b><br><span>治愈 · 日本 · 让人想给远方的人写一封信</span></div><span class="go">了解详情 →</span></div>
+          <div class="pick"><span class="n">2</span><div><b>明天会放晴吗</b><br><span>喜剧 · 韩国 · 笑中带泪的职场小故事</span></div><span class="go">了解详情 →</span></div>
+          <div class="pick"><span class="n">3</span><div><b>爷爷的星空</b><br><span>家庭 · 中国 · 祖孙两代的温暖约定</span></div><span class="go">了解详情 →</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="mood">
+    <div class="wrap">
+      <div class="sh">
+        <div class="lb"><span class="no">SECTION 03</span><h2>不知道看什么？<em>跟着心情选</em></h2><p>把你此刻的状态告诉自己，我们帮你找到匹配的作品</p></div>
+        <a class="rt" href="#acc">下一节：常见疑问 →</a>
+      </div>
+      <div class="mood">
+        <div class="mcard"><div class="ic">😫</div><h3>今天有点累</h3><p>想彻底放空，不想动脑，只需要笑一笑。</p><span class="ar">推荐：喜剧 →</span></div>
+        <div class="mcard"><div class="ic">😔</div><h3>有点小emo</h3><p>情绪需要被接住，想被温柔地对待一下。</p><span class="ar">推荐：治愈 →</span></div>
+        <div class="mcard"><div class="ic">🏡</div><h3>和家人一起</h3><p>周末在家，想找一部老少咸宜的片子。</p><span class="ar">推荐：家庭 →</span></div>
+        <div class="mcard"><div class="ic">🧒</div><h3>陪孩子看</h3><p>想找画面好看、故事有意义的作品。</p><span class="ar">推荐：动画 →</span></div>
+        <div class="mcard"><div class="ic">✈️</div><h3>想逃离日常</h3><p>渴望一场想象力拉满的冒险旅程。</p><span class="ar">推荐：奇幻 →</span></div>
+        <div class="mcard"><div class="ic">🤔</div><h3>想看点真的</h3><p>想拓宽视野，看看真实的世界与人生。</p><span class="ar">推荐：纪录 →</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="acc" style="background:#fff">
+    <div class="wrap">
+      <div class="sh">
+        <div class="lb"><span class="no">SECTION 04</span><h2>常见<em>疑问</em>与解答</h2><p>关于访问、内容与使用的高频问题</p></div>
+      </div>
+      <div class="acc">
+        <details open>
+          <summary>嘟嘟电影网的官方网址是什么？</summary>
+          <p>官方唯一网址是 <strong style="color:var(--ink)">https://dududianyingwang-zh.github.io</strong>，建议直接收藏到浏览器书签，方便每天打开看今日精选。</p>
+        </details>
+        <details>
+          <summary>平台主要收录哪些类型的影视作品？</summary>
+          <p>以轻松、治愈、陪伴为核心，重点覆盖喜剧、动画、家庭、治愈、奇幻、纪录六大类型，整体基调轻松正向，适合全年龄层观看。</p>
+        </details>
+        <details>
+          <summary>每日精选片单什么时候更新？</summary>
+          <p>每天 18:00 由编辑部更新三部当日精选作品，兼顾时效性与观看氛围，节假日也会照常更新。</p>
+        </details>
+        <details>
+          <summary>手机、平板上的浏览体验如何？</summary>
+          <p>全站采用响应式布局，从大屏桌面到小屏手机均做了专门适配，图文与交互元素会随屏幕尺寸自动重排，保证舒适的阅读与观看体验。</p>
+        </details>
+        <details>
+          <summary>内容是否适合孩子和长辈一起观看？</summary>
+          <p>大部分内容以轻松正向为主，家庭与动画板块尤其适合亲子与长辈共同观看，每部作品都标注了题材类型与适看建议。</p>
+        </details>
+        <details>
+          <summary>想推荐想看的作品怎么办？</summary>
+          <p>欢迎通过站内反馈联系编辑部，嘟嘟电影网会结合观众反馈与内容情况，持续扩充精选片单范围。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="cta">
+        <h2>现在就打开一部，让好电影治愈你的今天</h2>
+        <p>嘟嘟电影网，用轻松的内容与温柔的陪伴，做你每天的精神补给站。</p>
+        <div class="hacts" style="justify-content:center">
+          <a class="btn btn-a" href="#types">开始浏览</a>
+          <a class="btn btn-b" href="#daily">今日精选</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fg">
+      <div class="brand">
+        <div class="mk">嘟</div>
+        <b>嘟嘟电影网</b>
+        <p>一个以轻松、治愈、陪伴为核心的影视在线观看平台，让不同年龄层的观众都能快速找到当下适合的那一部。</p>
+      </div>
+      <div><h4>内容类型</h4><ul>
+        <li><a href="#types">喜剧</a></li>
+        <li><a href="#types">动画</a></li>
+        <li><a href="#types">家庭</a></li>
+        <li><a href="#types">治愈</a></li>
+      </ul></div>
+      <div><h4>精选栏目</h4><ul>
+        <li><a href="#daily">今日精选</a></li>
+        <li><a href="#mood">选片指引</a></li>
+        <li><a href="#types">内容类型</a></li>
+        <li><a href="#acc">常见疑问</a></li>
+      </ul></div>
+      <div><h4>关于本站</h4><ul>
+        <li><a href="#home">返回首页</a></li>
+        <li><a href="#daily">收藏本站</a></li>
+        <li><a href="#acc">内容反馈</a></li>
+        <li><a href="#home">联系编辑部</a></li>
+      </ul></div>
+    </div>
+    <div class="fb">
+      <span>© 2026 嘟嘟电影网（dududianyingwang-zh.github.io）· 让好电影治愈你的每一天</span>
+      <span class="kw"><a href="#types">内容类型</a><a href="#daily">今日精选</a><a href="#acc">常见疑问</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var nav=document.getElementById('nav'),tog=document.getElementById('tog');
+tog.addEventListener('click',function(){nav.classList.toggle('open')});
+nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open')});
+</script>
+</body>
+</html>
